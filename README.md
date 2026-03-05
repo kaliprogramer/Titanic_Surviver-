@@ -5,6 +5,12 @@ A machine learning project that predicts whether a passenger would survive the T
 This project demonstrates a complete **AI/ML workflow**, including data preprocessing, model training, evaluation, and deployment with a simple web interface.
 
 ---
+## 🌟 Live Demo
+
+You don’t need to run anything locally!  
+Click the link below to test the AI model directly in your browser:
+
+[![Open Streamlit App](https://img.shields.io/badge/Streamlit-App-blue?logo=streamlit)](https://titanicsurviver.streamlit.app/)
 
 ## 📌 Project Overview
 
