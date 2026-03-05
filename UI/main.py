@@ -1,7 +1,9 @@
 import joblib
 import streamlit as st
+import os
 
-model = joblib.load("../core/titanic_model.pkl")
+model_path = os.path.join(os.path.dirname(__file__), "..", "core", "titanic_model.pkl")
+model = joblib.load(model_path)
 
 st.title("Titanic Survival Predictor")
 
@@ -32,7 +34,7 @@ age = st.slider("Age",1,80)
 col3, col4 = st.columns(2)
 with col3:
     family_in = st.selectbox("No of Family", ["Myself only",2,3,4,5,6,7], key="family_box")
-    if  family_in == "No of Family":
+    if  family_in == "Myself only":
         family = 0
     elif family_in == 2:
         family = 1
@@ -51,7 +53,7 @@ with col4:
 
 prediction_in = model.predict([[pclass,sex,age,Price,Embarked,family]])
 if prediction_in == 1:
-    prediction = "Survived Sucessfully"
+    prediction = "Survived Successfully"
 else:
     prediction = "Not Survived"
 
