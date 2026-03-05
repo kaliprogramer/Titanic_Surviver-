@@ -93,7 +93,7 @@ The app loads the trained model and predicts survival in real time.
 ### 1️⃣ Clone the repository
 
 ```
-git clone https://github.com/kaliprogrammer/titanic-ai-project.git
+git clone https://github.com/kaliprogramer/Titanic_Surviver-.git
 ```
 
 ### 2️⃣ Install dependencies
